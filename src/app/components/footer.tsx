@@ -18,14 +18,14 @@ const Footer = () => {
                 grid content-center"
     >
       <div className="flex justify-center scale-90">
-        <SocialMediaButton link={sc_link} icon="social-sc.png" />
-        <SocialMediaButton link={yt_link} icon="social-yt.png" />
-        <SocialMediaButton link={sp_link} icon="social-sp.png" />
-        <SocialMediaButton link={am_link} icon="social-am.png" />
-        <SocialMediaButton link={bc_link} icon="social-bc.png" />
-        <SocialMediaButton link={tw_link} icon="social-tw.png" />
-        <SocialMediaButton link={ig_link} icon="social-ig.png" />
-        <SocialMediaButton link={tt_link} icon="social-tt.png" />
+        <SocialMediaButton link={sc_link} icon="/social-logos/social-sc.png" />
+        <SocialMediaButton link={yt_link} icon="/social-logos/social-yt.png" />
+        <SocialMediaButton link={sp_link} icon="/social-logos/social-sp.png" />
+        <SocialMediaButton link={am_link} icon="/social-logos/social-am.png" />
+        <SocialMediaButton link={bc_link} icon="/social-logos/social-bc.png" />
+        <SocialMediaButton link={tw_link} icon="/social-logos/social-tw.png" />
+        <SocialMediaButton link={ig_link} icon="/social-logos/social-ig.png" />
+        <SocialMediaButton link={tt_link} icon="/social-logos/social-tt.png" />
       </div>
     </div>
   );

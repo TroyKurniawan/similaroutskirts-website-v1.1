@@ -11,7 +11,7 @@ function ButtonHeader({ title, link }: ButtonProps) {
                  border-blue-500 hover:border-b-4 transition-all
                   flex
                   text-lg font-bold
-                  hover:bg-white hover:bg-opacity-5
+                  hover:bg-white/10
                   group"
     >
       {title}

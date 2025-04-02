@@ -30,7 +30,7 @@ function Header() {
         {/* Logo */}
         <a href="/">
           <img
-            src="so-logo.png"
+            src="so-logos/so-logo.png"
             alt="similar outskirts logo"
             className="min-w-10 w-10"
           />

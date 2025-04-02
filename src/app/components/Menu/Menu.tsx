@@ -32,7 +32,7 @@ function Menu({ pageBehind }: MenuProps) {
         {/* Menu Button SVG */}
         {!open && (
           <img
-            src="google-menu.svg"
+            src="/utility-logos/google-menu.svg"
             className="hover:cursor-pointer size-10 m-3"
             alt="menu button"
             onClick={menuOpen}
@@ -41,7 +41,7 @@ function Menu({ pageBehind }: MenuProps) {
         {/* Close Button SVG */}
         {open && (
           <img
-            src="google-close.svg"
+            src="/utility-logos/google-close.svg"
             className="hover:cursor-pointer size-10 m-3"
             alt="close button"
             onClick={menuOpen}
