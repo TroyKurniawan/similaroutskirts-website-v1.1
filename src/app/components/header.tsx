@@ -38,7 +38,7 @@ function Header() {
 
         {/* Buttons */}
         <div className="h-16 hidden lg:flex">
-          <ButtonHeader title="Home" link="/home" />
+          <ButtonHeader title="Home" link="/" />
           <ButtonHeader title="About" link="/about" />
           <ButtonHeader title="Music" link="/music" />
           <ButtonHeader title="Live Shows" link="/live-shows" />
