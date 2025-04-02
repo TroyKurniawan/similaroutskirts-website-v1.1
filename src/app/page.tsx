@@ -13,13 +13,9 @@ function Home() {
       <div className="w-screen h-screen grid place-items-center">
         {/* Background */}
         <div
-          className="h-screen w-screen bg-[url(/backgrounds/bg-home.jpg)] fixed -z-50
+          className="h-screen w-screen bg-[url(/backgrounds/bg-home.jpg)] fixed -z-50  
                    bg-cover bg-no-repeat bg-[70%] md:bg-center"
         />
-        {/* <img
-          src="/backgrounds/bg-home.jpg"
-          className="h-screen w-full fixed -z-50"
-        /> */}
 
         {/* Logo */}
         <img
