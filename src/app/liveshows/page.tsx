@@ -29,7 +29,7 @@ function LiveShows() {
         >
           {/* Map out all show data */}
           {LiveShowsData.map((event) => (
-            <LiveShowsEntry event={event} />
+            <LiveShowsEntry event={event} key={event.title} />
           ))}
         </div>
       </div>

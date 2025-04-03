@@ -1,14 +1,15 @@
 import SocialMediaButton from "./socialmediabutton";
 
-let sc_link = "https://soundcloud.com/similar-outskirts";
-let yt_link = "https://www.youtube.com/SimilarOutskirts/";
-let sp_link =
+const sc_link = "https://soundcloud.com/similar-outskirts";
+const yt_link = "https://www.youtube.com/SimilarOutskirts/";
+const sp_link =
   "https://open.spotify.com/artist/1EheS355QusAVqx9Pux9No?si=oS6DBwRDQZa2GmwRkY3TTw";
-let am_link = "https://music.apple.com/ca/artist/similar-outskirts/1073747592";
-let tw_link = "https://x.com/Sim_Out_";
-let ig_link = "https://instagram.com/similaroutskirts";
-let tt_link = "https://www.tiktok.com/@similaroutskirts";
-let bc_link = "https://similaroutskirts.bandcamp.com";
+const am_link =
+  "https://music.apple.com/ca/artist/similar-outskirts/1073747592";
+const tw_link = "https://x.com/Sim_Out_";
+const ig_link = "https://instagram.com/similaroutskirts";
+const tt_link = "https://www.tiktok.com/@similaroutskirts";
+const bc_link = "https://similaroutskirts.bandcamp.com";
 
 const Footer = () => {
   return (

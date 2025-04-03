@@ -19,7 +19,7 @@ function ParagraphSection({ title, text, code }: ParagraphSectionProps) {
         {/* Paragraph */}
         <div className="text-sm md:text-lg text-justify space-y-4">
           {text.map((t) => (
-            <p>{t}</p>
+            <p key={t}>{t}</p>
           ))}
         </div>
 
@@ -32,7 +32,7 @@ function ParagraphSection({ title, text, code }: ParagraphSectionProps) {
           >
             <code>
               {code.map((t) => (
-                <p>{t}</p>
+                <p key={t}>{t}</p>
               ))}
             </code>
           </div>

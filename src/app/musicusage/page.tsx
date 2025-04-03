@@ -61,7 +61,11 @@ function MusicUsage() {
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-8">FAQ</h2>
           {FAQdata.map((faq) => (
-            <FAQsection question={faq.question} answer={faq.answer} />
+            <FAQsection
+              question={faq.question}
+              answer={faq.answer}
+              key={faq.question}
+            />
           ))}
         </div>
 
