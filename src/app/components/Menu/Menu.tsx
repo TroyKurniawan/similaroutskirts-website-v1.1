@@ -31,21 +31,31 @@ function Menu({ pageBehind }: MenuProps) {
       <div className="z-50">
         {/* Menu Button SVG */}
         {!open && (
-          <img
-            src="/utility-logos/google-menu.svg"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#FFFFFF"
             className="hover:cursor-pointer size-10 m-3"
-            alt="menu button"
             onClick={menuOpen}
-          />
+          >
+            <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+          </svg>
         )}
         {/* Close Button SVG */}
         {open && (
-          <img
-            src="/utility-logos/google-close.svg"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#FFFFFF"
             className="hover:cursor-pointer size-10 m-3"
-            alt="close button"
             onClick={menuOpen}
-          />
+          >
+            <path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z" />
+          </svg>
         )}
       </div>
 

@@ -1,4 +1,3 @@
-import persona from "../images/so-persona.png";
 import PageTitle from "../components/pagetitle";
 // import { Helmet } from "react-helmet-async";
 
