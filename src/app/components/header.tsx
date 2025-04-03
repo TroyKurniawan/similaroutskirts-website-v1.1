@@ -41,7 +41,7 @@ function Header() {
           <ButtonHeader title="Home" link="/" />
           <ButtonHeader title="About" link="/about" />
           <ButtonHeader title="Music" link="/music" />
-          <ButtonHeader title="Live Shows" link="/live-shows" />
+          <ButtonHeader title="Live Shows" link="/liveshows" />
           <ButtonHeader title="Music Usage" link="/music-usage" />
           <ButtonHeader title="Contact" link="/contact" />
         </div>
