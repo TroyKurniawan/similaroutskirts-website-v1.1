@@ -2,6 +2,7 @@
 
 import Menu from "./Menu/Menu";
 import ButtonHeader from "./buttonheader";
+import Link from "next/link";
 
 function pageBehind() {
   if (document.getElementById("page")?.classList.contains("-z-10"))
@@ -28,13 +29,13 @@ function Header() {
         id="header"
       >
         {/* Logo */}
-        <a href="/">
+        <Link href="/">
           <img
             src="so-logos/so-logo.png"
             alt="similar outskirts logo"
             className="min-w-10 w-10"
           />
-        </a>
+        </Link>
 
         {/* Buttons */}
         <div className="h-16 hidden lg:flex">
