@@ -21,6 +21,10 @@
   }
 }
 
+html {
+  overflow-y: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
