@@ -19,22 +19,24 @@ function MusicPage() {
   // Open search filter box on small devices
   function openSearchFilter() {
     // If closed, open
-    if (
-      document
-        .getElementById("search-filter")
-        ?.classList.contains("-translate-x-[calc(100vw+50px)]")
-    ) {
-      document
-        .getElementById("search-filter")
-        ?.classList.remove("-translate-x-[calc(100vw+50px)]");
-      document.getElementById("black-bg")?.classList.remove("invisible");
-    }
-    // If opened, close
-    else {
-      document
-        .getElementById("search-filter")
-        ?.classList.add("-translate-x-[calc(100vw+50px)]");
-      document.getElementById("black-bg")?.classList.add("invisible");
+    if (typeof window !== "undefined") {
+      if (
+        document
+          .getElementById("search-filter")
+          ?.classList.contains("-translate-x-[calc(100vw+50px)]")
+      ) {
+        document
+          .getElementById("search-filter")
+          ?.classList.remove("-translate-x-[calc(100vw+50px)]");
+        document.getElementById("black-bg")?.classList.remove("invisible");
+      }
+      // If opened, close
+      else {
+        document
+          .getElementById("search-filter")
+          ?.classList.add("-translate-x-[calc(100vw+50px)]");
+        document.getElementById("black-bg")?.classList.add("invisible");
+      }
     }
   }
 

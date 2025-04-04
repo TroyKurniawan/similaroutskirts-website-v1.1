@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageTitle from "../components/pagetitle";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About - Similar Outskirts",
@@ -60,10 +61,12 @@ function About() {
               </p>
             </div>
             {/* Persona Image */}
-            <img
-              src="artworks/so-persona.png"
-              className="w-60 ml-12 animate-fadeInSlide hidden lg:inline"
+            <Image
+              src="/artworks/so-persona.png"
+              className="ml-12 animate-fadeInSlide hidden lg:inline"
               alt="similar outskirts persona"
+              width={240}
+              height={0}
             />
           </div>
         </div>

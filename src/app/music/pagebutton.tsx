@@ -25,9 +25,12 @@ function PageButton({
 
   //   Dynamically set button's ID and highlight it if it is the current page
   const pageButtonID: string = "page-button-" + pageNumber;
-  if (pageCurrent == pageNumber)
-    document.getElementById(pageButtonID)?.classList.add("bg-slate-800");
-  else document.getElementById(pageButtonID)?.classList.remove("bg-slate-800");
+  if (typeof window !== "undefined") {
+    if (pageCurrent == pageNumber)
+      document.getElementById(pageButtonID)?.classList.add("bg-slate-800");
+    else
+      document.getElementById(pageButtonID)?.classList.remove("bg-slate-800");
+  }
 
   // ==========================================
 
