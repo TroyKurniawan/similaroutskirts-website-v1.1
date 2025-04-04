@@ -1,9 +1,14 @@
 "use client";
 
+import { Metadata } from "next";
 import React, { useState } from "react";
 import EmailForm from "./emailform";
 import PageTitle from "../components/pagetitle";
-// import { Helmet } from "react-helmet-async";
+
+export const metadata: Metadata = {
+  title: "Contact - Similar Outskirts",
+  description: "Send an email to Similar Outskirts.",
+};
 
 function Contact() {
   const [successIcon, setSuccessIcon] = useState(true);
@@ -36,16 +41,6 @@ function Contact() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Contact</title>
-        <meta
-          name="description"
-          content="Send a message to Similar Outskirts"
-        />
-        <link rel="canonical" href="/contact" />
-      </Helmet> */}
-
-      {/* Background */}
       <div
         className="bg-[url(/backgrounds/bg-contact.jpg)] h-screen w-screen fixed -z-50
                    bg-cover bg-no-repeat bg-[70%] md:bg-bottom"

@@ -1,18 +1,15 @@
+import type { Metadata } from "next";
 import PageTitle from "../components/pagetitle";
-// import { Helmet } from "react-helmet-async";
+
+export const metadata: Metadata = {
+  title: "About - Similar Outskirts",
+  description:
+    "Troy Kurniawan (pka. Similar Outskirts) is an Indonesian-American bass music artist from the Bay Area.",
+};
 
 function About() {
   return (
     <>
-      {/* <Helmet>
-        <title>About</title>
-        <meta
-          name="description"
-          content="Information about Similar Outskirts"
-        />
-        <link rel="canonical" href="/about" />
-      </Helmet> */}
-
       {/* Background */}
       <div
         className="h-screen w-screen bg-[url(/backgrounds/bg-about.jpg)] fixed -z-50

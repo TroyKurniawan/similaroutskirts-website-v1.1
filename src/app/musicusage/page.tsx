@@ -1,23 +1,20 @@
+import { Metadata } from "next";
 import PageTitle from "../components/pagetitle";
 import ParagraphSection from "../components/paragraphsection";
 import { MusicUsageData } from "./musicusagedata";
 import FAQsection from "./FAQsection";
 import { FAQdata } from "./FAQdata";
-// import { Helmet } from "react-helmet-async";
 import Divider from "../components/divider";
+
+export const metadata: Metadata = {
+  title: "Music Usage - Similar Outskirts",
+  description:
+    "Learn how you can use music by Similar Outskirts in your projects and works.",
+};
 
 function MusicUsage() {
   return (
     <>
-      {/* <Helmet>
-        <title>Music Usage</title>
-        <meta
-          name="description"
-          content="How to use music by Similar Outskirts fairly"
-        />
-        <link rel="canonical" href="/music-usage" />
-      </Helmet> */}
-
       {/* Background */}
       <div
         className="h-screen w-screen bg-[url(/backgrounds/bg-musicusage.jpg)] fixed -z-50

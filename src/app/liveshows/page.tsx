@@ -1,20 +1,16 @@
+import { Metadata } from "next";
 import { LiveShowsData } from "./liveshowsdata";
 import LiveShowsEntry from "./liveshowsentry";
 import PageTitle from "../components/pagetitle";
-// import { Helmet } from "react-helmet-async";
+
+export const metadata: Metadata = {
+  title: "Live Shows - Similar Outskirts",
+  description: "Check out live performances by Similar Outskirts.",
+};
 
 function LiveShows() {
   return (
     <>
-      {/* <Helmet>
-        <title>Live Shows</title>
-        <meta
-          name="description"
-          content="Live show recordings of Similar Outskirts"
-        />
-        <link rel="canonical" href="/live-shows" />
-      </Helmet> */}
-
       {/* Background */}
       <div
         className="h-screen w-screen bg-[url(/backgrounds/bg-liveshows.jpg)] fixed -z-50

@@ -1,15 +1,6 @@
-// import SEO from "../components/utilities/SEO";
-
 function Home() {
   return (
     <>
-      {/* <SEO
-        title="Similar Outskirts"
-        url="similaroutskirts.vercel.app"
-        description="Music Producer / DJ 🎧"
-        img="https://raw.githubusercontent.com/TroyKurniawan/Similar-Outskirts-Website-v1/refs/heads/main/public/thumbnail.jpg"
-      /> */}
-
       <div className="w-screen h-screen grid place-items-center">
         {/* Background */}
         <div
