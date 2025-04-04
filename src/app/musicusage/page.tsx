@@ -17,7 +17,7 @@ function MusicUsage() {
     <>
       {/* Background */}
       <div
-        className="h-screen w-screen bg-[url(/backgrounds/bg-musicusage.jpg)] fixed -z-50
+        className="h-screen w-screen bg-[url(/backgrounds/bg-musicusage.jpg)] fixed -z-50 animate-fadeIn
                    bg-cover bg-no-repeat bg-[70%] md:bg-center"
       />
       <div className="grid place-items-center animate-fadeInSlide mb-16">

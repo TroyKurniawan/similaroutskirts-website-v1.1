@@ -13,7 +13,7 @@ function About() {
     <>
       {/* Background */}
       <div
-        className="h-screen w-screen bg-[url(/backgrounds/bg-about.jpg)] fixed -z-50
+        className="h-screen w-screen bg-[url(/backgrounds/bg-about.jpg)] fixed -z-50 animate-fadeIn
                    bg-cover bg-no-repeat bg-[30%] md:bg-center"
       />
 

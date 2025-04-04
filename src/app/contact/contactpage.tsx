@@ -37,7 +37,7 @@ function ContactPage() {
     <>
       {/* Background */}
       <div
-        className="bg-[url(/backgrounds/bg-contact.jpg)] h-screen w-screen fixed -z-50
+        className="bg-[url(/backgrounds/bg-contact.jpg)] h-screen w-screen fixed -z-50 animate-fadeIn
                    bg-cover bg-no-repeat bg-[70%] md:bg-bottom"
       />
 

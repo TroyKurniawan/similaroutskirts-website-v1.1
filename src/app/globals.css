@@ -59,13 +59,14 @@ body {
 /* === Animations === */
 
 @theme {
-  --animate-fadeIn: fadeIn 150ms ease-out;
+  --animate-fadeIn: fadeIn 1s ease-out;
   --animate-fadeInSlide: fadeInSlide 1s ease-out;
   --animate-popup: popup 5s ease-out;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0 }
+  25% { opacity: 0 }
   100% { opacity: 1 }
 }
 

@@ -13,7 +13,7 @@ function LiveShows() {
     <>
       {/* Background */}
       <div
-        className="h-screen w-screen bg-[url(/backgrounds/bg-liveshows.jpg)] fixed -z-50
+        className="h-screen w-screen bg-[url(/backgrounds/bg-liveshows.jpg)] fixed -z-50 animate-fadeIn
                    bg-cover bg-no-repeat bg-[70%] md:bg-bottom"
       />
       <div className="w-screen grid place-items-center text-white animate-fadeInSlide">
