@@ -8,12 +8,13 @@ type EmailFormProps = {
 };
 
 function EmailForm({ emailNotification }: EmailFormProps) {
-  // Reference to form
-  const form = document.getElementById("form");
   const [progress, setProgress] = useState(false);
 
   // Function to send email
   const sendEmail = (e: React.FormEvent) => {
+    // Reference to form
+    const form = document.getElementById("form");
+
     e.preventDefault();
     setProgress(true);
 

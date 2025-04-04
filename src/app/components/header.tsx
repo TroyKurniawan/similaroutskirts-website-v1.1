@@ -11,7 +11,10 @@ function pageBehind() {
 }
 
 function Header() {
-  document.addEventListener("scroll", bgColor);
+  // Make sure that "document" can be read be the client
+  if (typeof window !== "undefined") {
+    document.addEventListener("scroll", bgColor);
+  }
 
   // If the user is not at the top of the page, add a black background to the header
   function bgColor() {
