@@ -23,7 +23,7 @@ type MusicEntryProps = {
 };
 
 function MusicEntry({ entry }: MusicEntryProps) {
-  let months = [
+  const months = [
     "January",
     "February",
     "March",
@@ -39,16 +39,16 @@ function MusicEntry({ entry }: MusicEntryProps) {
   ];
 
   // Format date
-  let date_split: string[] = entry.release_date.split("-");
-  let year: string = date_split[0];
-  let month: string = months[Number(date_split[1]) - 1];
-  let date: string = date_split[2];
-  let date_string = month + " " + date + ", " + year;
+  const date_split: string[] = entry.release_date.split("-");
+  const year: string = date_split[0];
+  const month: string = months[Number(date_split[1]) - 1];
+  const date: string = date_split[2];
+  const date_string = month + " " + date + ", " + year;
 
   // Format length
   let length_string = "";
-  let min: number = Math.floor(entry.length / 60);
-  let sec: number = entry.length % 60;
+  const min: number = Math.floor(entry.length / 60);
+  const sec: number = entry.length % 60;
   if (sec < 10) length_string = min + ":0" + sec;
   else length_string = min + ":" + sec;
 
@@ -67,15 +67,6 @@ function MusicEntry({ entry }: MusicEntryProps) {
       tempo_string += ", " + entry.tempo[i];
     }
   }
-
-  // Format inline style background image
-  let background_inline = {
-    // backgroundImage: "url(" + entry.art + ")",
-    // backgroundRepeat: "no-repeat",
-    // backgroundPosition: "center",
-    // width: "10px",
-    // height: "10px",
-  };
 
   // ============================================
 

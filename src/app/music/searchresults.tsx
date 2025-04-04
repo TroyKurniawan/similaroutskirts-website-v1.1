@@ -44,11 +44,11 @@ function SearchResults({
   collaborations,
 }: SearchResultsProps) {
   // Count number of entries that are rendered
-  let entryCount = MusicData.slice(0).filter(musicFilter).length;
+  const entryCount = MusicData.slice(0).filter(musicFilter).length;
 
   // Pages
-  const [itemsPerPage, setItemsPerPage] = useState(30);
-  let pageCount = Math.ceil(entryCount / itemsPerPage);
+  const itemsPerPage = 30;
+  const pageCount = Math.ceil(entryCount / itemsPerPage);
   const [pageRange, setPageRange] = useState([0, itemsPerPage]);
   const [pageCurrent, setPageCurrent] = useState(1);
 
@@ -64,8 +64,8 @@ function SearchResults({
     }
 
     // Check release year
-    let date_split: string[] = entry.release_date.split("-");
-    let year: number = parseInt(date_split[0]);
+    const date_split: string[] = entry.release_date.split("-");
+    const year: number = parseInt(date_split[0]);
     if (releaseYear[0] > year || year > releaseYear[1]) return null;
 
     // Check keysig
@@ -119,7 +119,7 @@ function SearchResults({
 
   // Scroll back to top of results when page, sort, or filter changes
   useEffect(() => {
-    let musicentries: HTMLElement | null =
+    const musicentries: HTMLElement | null =
       document.getElementById("music-entries");
     musicentries!.scrollTop = 0;
   }, [pageCurrent, sortMethod, keyword, tempo, releaseYear, keysig]);

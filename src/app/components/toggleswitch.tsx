@@ -47,7 +47,7 @@ const ToggleSwitch = ({
             type="checkbox"
             className="hidden peer"
             checked={initCheck}
-            onChange={(e) => {
+            onChange={() => {
               // Toggle appearance of switch
               setInitCheck(!initCheck);
               // Invoke callback function

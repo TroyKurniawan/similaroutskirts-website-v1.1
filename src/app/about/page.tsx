@@ -47,16 +47,16 @@ function About() {
                 Proximity, and Heaven Sent.
               </p>
               <p>
-                In recent years, a majority of Kurniawan's influences have come
-                from a new genre movement in the community called Colour Bass.
-                This style aims to cohesively combine the aggressive elements of
-                bass music and the catchiness/tonality of melodic music.
-                Inspiration is also drawn a lot from video games soundtracks and
-                Japanese Pop/Rock, namely by Junichi Masuda, Go Ichinose &
-                Morikazu Aoki (Pokemon), Yasunori Nishiki (Octopath Traveler),
-                Christopher Larkin (Hollow Knight), Sangatsu No Phantasia
-                (Kiznaiver), Yorushika (A Whisker Away), and Eve (Jujutsu
-                Kaisen, Dororo).
+                In recent years, a majority of Kurniawan&apos;s influences have
+                come from a new genre movement in the community called Colour
+                Bass. This style aims to cohesively combine the aggressive
+                elements of bass music and the catchiness/tonality of melodic
+                music. Inspiration is also drawn a lot from video games
+                soundtracks and Japanese Pop/Rock, namely by Junichi Masuda, Go
+                Ichinose & Morikazu Aoki (Pokemon), Yasunori Nishiki (Octopath
+                Traveler), Christopher Larkin (Hollow Knight), Sangatsu No
+                Phantasia (Kiznaiver), Yorushika (A Whisker Away), and Eve
+                (Jujutsu Kaisen, Dororo).
               </p>
             </div>
             {/* Persona Image */}

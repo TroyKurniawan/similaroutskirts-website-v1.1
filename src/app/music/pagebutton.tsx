@@ -17,14 +17,14 @@ function PageButton({
 }: PageButtonProps) {
   // Calculate the page to change to
   function pagesFilter() {
-    let index0: number = (pageNumber - 1) * itemsPerPage;
-    let index1: number = index0 + itemsPerPage;
+    const index0: number = (pageNumber - 1) * itemsPerPage;
+    const index1: number = index0 + itemsPerPage;
     setPageRange([index0, index1]);
     setPageCurrent(pageNumber);
   }
 
   //   Dynamically set button's ID and highlight it if it is the current page
-  let pageButtonID: string = "page-button-" + pageNumber;
+  const pageButtonID: string = "page-button-" + pageNumber;
   if (pageCurrent == pageNumber)
     document.getElementById(pageButtonID)?.classList.add("bg-slate-800");
   else document.getElementById(pageButtonID)?.classList.remove("bg-slate-800");
