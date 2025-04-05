@@ -4,16 +4,76 @@ import { MusicData } from "../musicdata";
 import Link from "./link";
 import NotFound from "@/app/not-found";
 
-export const metadata: Metadata = {
-  title: "Music",
-  description: "View the entire dicography of Similar Outskirts.",
+type Props = {
+  params: Promise<{ releaseTitle: string }>;
 };
 
-async function SmartLink({
+export const generateMetadata = async ({
   params,
-}: {
-  params: Promise<{ releaseTitle: string }>;
-}) {
+}: Props): Promise<Metadata> => {
+  // Search for the right page
+  const releaseTitle = (await params).releaseTitle;
+  let song = MusicData[0];
+  let found = false;
+  for (const release of MusicData) {
+    if (release.title.replace(/\s/g, "").toLowerCase() === releaseTitle) {
+      song = release;
+      found = true;
+      break;
+    }
+  }
+  if (song.subtitle) song.title += " (" + song.subtitle + ")";
+  // song.art = song.art.replaceAll("500", "1080");
+
+  if (found)
+    return {
+      title: {
+        absolute: song.title,
+      },
+      description: "Download / Stream 🎶",
+
+      openGraph: {
+        title: song.title,
+        description: "Download / Stream 🎶",
+        url: "https://similaroutskirts.com",
+        siteName: "Similar Outskirts",
+        images: [
+          {
+            url: song.art,
+            width: 1200,
+            height: 1200,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+    };
+  else
+    return {
+      title: {
+        absolute: "Error 404",
+      },
+      description: "No page found.",
+
+      openGraph: {
+        title: "Error 404",
+        description: "No page found.",
+        url: "https://similaroutskirts.com",
+        siteName: "Similar Outskirts",
+        images: [
+          {
+            url: "/thumbnail.jpg",
+            width: 1280,
+            height: 720,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
+    };
+};
+
+async function SmartLink({ params }: Props) {
   // Search for the right page
   const releaseTitle = (await params).releaseTitle;
   let song = MusicData[0];

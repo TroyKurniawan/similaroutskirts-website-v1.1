@@ -1,6 +1,28 @@
-"use client";
-
+import { Metadata } from "next";
 import ButtonPrimary from "./components/buttonprimary";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Error 404",
+  },
+  description: "No page found.",
+
+  openGraph: {
+    title: "Error 404",
+    description: "No page found.",
+    url: "https://similaroutskirts.com",
+    siteName: "Similar Outskirts",
+    images: [
+      {
+        url: "/thumbnail.jpg",
+        width: 1280,
+        height: 720,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 function NotFound() {
   return (
