@@ -12,34 +12,37 @@ export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   // Search for the right page
-  const releaseTitle = (await params).releaseTitle;
-  let song = MusicData[0];
-  let found = false;
-  for (const release of MusicData) {
-    if (release.title.replace(/\s/g, "").toLowerCase() === releaseTitle) {
-      song = release;
-      found = true;
+  const metaReleaseTitle = (await params).releaseTitle;
+  let metaSong = MusicData[0];
+  let metaFound = false;
+  for (const metaRelease of MusicData) {
+    if (
+      metaRelease.title.replace(/\s/g, "").toLowerCase() === metaReleaseTitle
+    ) {
+      metaSong = metaRelease;
+      metaFound = true;
       break;
     }
   }
-  if (song.subtitle) song.title += " (" + song.subtitle + ")";
+  let full_title = "";
+  if (metaSong.subtitle) full_title += " (" + metaSong.subtitle + ")";
   // song.art = song.art.replaceAll("500", "1080");
 
-  if (found)
+  if (metaFound)
     return {
       title: {
-        absolute: song.title,
+        absolute: full_title,
       },
       description: "Download / Stream 🎶",
 
       openGraph: {
-        title: song.title,
+        title: full_title,
         description: "Download / Stream 🎶",
         url: "https://similaroutskirts.com",
         siteName: "Similar Outskirts",
         images: [
           {
-            url: song.art,
+            url: metaSong.art,
             width: 1200,
             height: 1200,
           },
