@@ -12,17 +12,18 @@ export const metadata: Metadata = {
     "Learn how you can use music by Similar Outskirts in your projects and works.",
 
   openGraph: {
-    title: "Music Usage",
+    title: "Music Usage | Similar Outskirts",
     description:
       "Learn how you can use music by Similar Outskirts in your projects and works.",
-    url: "https://similaroutskirts.com",
+    url: "https://similaroutskirts.com/musicusage",
     siteName: "Similar Outskirts",
-    images: {
-      url: "",
-      width: "1280",
-      height: "720",
-      alt: "Music Usage",
-    },
+    images: [
+      {
+        url: "/thumbnail.jpg",
+        width: 1280,
+        height: 720,
+      },
+    ],
     locale: "en_US",
     type: "website",
   },

@@ -6,6 +6,22 @@ import PageTitle from "../components/pagetitle";
 export const metadata: Metadata = {
   title: "Live Shows",
   description: "Check out live performances by Similar Outskirts.",
+
+  openGraph: {
+    title: "Live Shows | Similar Outskirts",
+    description: "Check out live performances by Similar Outskirts.",
+    url: "https://similaroutskirts.com/liveshows",
+    siteName: "Similar Outskirts",
+    images: [
+      {
+        url: "/thumbnail.jpg",
+        width: 1280,
+        height: 720,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 function LiveShows() {
