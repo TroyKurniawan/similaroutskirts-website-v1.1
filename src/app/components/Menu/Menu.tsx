@@ -68,11 +68,11 @@ function Menu({ pageBehind }: MenuProps) {
                     bg-black"
       >
         <div className="w-44 text-4xl font-bold text-right">
-          <MenuLinks title="Home" link="/home" />
+          <MenuLinks title="Home" link="/" />
           <MenuLinks title="About" link="/about" />
           <MenuLinks title="Music" link="/music" />
-          <MenuLinks title="Live Shows" link="/live-shows" />
-          <MenuLinks title="Music Usage" link="/music-usage" />
+          <MenuLinks title="Live Shows" link="/liveshows" />
+          <MenuLinks title="Music Usage" link="/musicusage" />
           <MenuLinks title="Contact" link="/contact" />
         </div>
       </div>
