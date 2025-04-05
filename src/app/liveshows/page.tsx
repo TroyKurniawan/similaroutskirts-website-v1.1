@@ -4,7 +4,7 @@ import LiveShowsEntry from "./liveshowsentry";
 import PageTitle from "../components/pagetitle";
 
 export const metadata: Metadata = {
-  title: "Live Shows - Similar Outskirts",
+  title: "Live Shows",
   description: "Check out live performances by Similar Outskirts.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ContactPage from "./contactpage";
 
 export const metadata: Metadata = {
-  title: "Contact - Similar Outskirts",
+  title: "Contact",
   description: "Send an email to Similar Outskirts.",
 };
 

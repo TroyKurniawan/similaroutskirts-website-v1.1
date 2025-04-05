@@ -7,9 +7,25 @@ import { FAQdata } from "./FAQdata";
 import Divider from "../components/divider";
 
 export const metadata: Metadata = {
-  title: "Music Usage - Similar Outskirts",
+  title: "Music Usage",
   description:
     "Learn how you can use music by Similar Outskirts in your projects and works.",
+
+  openGraph: {
+    title: "Music Usage",
+    description:
+      "Learn how you can use music by Similar Outskirts in your projects and works.",
+    url: "https://similaroutskirts.com",
+    siteName: "Similar Outskirts",
+    images: {
+      url: "",
+      width: "1280",
+      height: "720",
+      alt: "Music Usage",
+    },
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 function MusicUsage() {

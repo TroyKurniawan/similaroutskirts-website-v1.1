@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
 import PageTitle from "../components/pagetitle";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "About - Similar Outskirts",
-  description:
-    "Troy Kurniawan (pka. Similar Outskirts) is an Indonesian-American bass music artist from the Bay Area.",
-};
+// export const metadata: Metadata = {
+//   title: "About",
+//   description:
+//     "Similar Outskirts is an Indonesian-American bass music artist from the Bay Area.",
+// };
 
 function About() {
   return (
