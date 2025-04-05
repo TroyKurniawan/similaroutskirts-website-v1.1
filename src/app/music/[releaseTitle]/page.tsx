@@ -101,24 +101,30 @@ async function SmartLink({ params }: Props) {
         {/* Background */}
         <img
           src={song.art}
-          className="fixed h-screen w-screen blur-xl opacity-40 -z-10"
+          className="fixed w-screen h-screen blur-2xl opacity-40 -z-10"
           alt={song.title}
         />
 
-        <div className="w-screen mt-8 grid justify-center place-content-center">
+        <div className="w-full h-full mt-8 grid justify-center place-content-center">
           {/* Main Box */}
           <div
-            className="w-80 grid justify-center py-4 my-16 shadow-xl
+            className="w-80 md:w-96 grid justify-center py-4 my-16 shadow-xl
                         border-4 border-slate-800 bg-slate-900 backdrop-blur bg-opacity-80 space-y-4
                         animate-fadeInSlide"
           >
             {/* Art */}
-            <img className="size-72" src={song.art} alt={song.title} />
+            <img
+              className="size-72 md:size-80"
+              src={song.art}
+              alt={song.title}
+            />
 
             {/* Title */}
             <div className="w-full h-16 grid place-items-center">
-              <h1 className="font-black text-2xl">{song.title}</h1>
-              <h2 className="font-bold text-gray-500">{song.subtitle}</h2>
+              <h1 className="font-black text-2xl md:text-3xl">{song.title}</h1>
+              <h2 className="font-bold text-gray-500 md:text-lg">
+                {song.subtitle}
+              </h2>
             </div>
 
             <span className="w-full h-[3px] bg-slate-800" />

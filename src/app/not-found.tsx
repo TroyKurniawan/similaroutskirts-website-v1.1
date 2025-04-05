@@ -29,7 +29,7 @@ function NotFound() {
     <>
       {/* Background */}
       <div
-        className="h-screen w-screen bg-[url(/backgrounds/bg-home.jpg)] fixed -z-50  
+        className="h-screen w-screen bg-[url(/backgrounds/bg-home.jpg)] animate-fadeIn blur-lg fixed -z-50  
                    bg-cover bg-no-repeat bg-[70%] md:bg-center"
       />
 
