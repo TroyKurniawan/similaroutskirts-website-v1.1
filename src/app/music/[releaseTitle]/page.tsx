@@ -25,7 +25,8 @@ export const generateMetadata = async ({
     }
   }
   let full_title = "";
-  if (metaSong.subtitle) full_title += " (" + metaSong.subtitle + ")";
+  if (metaSong.subtitle)
+    full_title += metaSong.title + " (" + metaSong.subtitle + ")";
   // song.art = song.art.replaceAll("500", "1080");
 
   if (metaFound)
@@ -43,8 +44,8 @@ export const generateMetadata = async ({
         images: [
           {
             url: metaSong.art,
-            width: 1200,
-            height: 1200,
+            width: 500,
+            height: 500,
           },
         ],
         locale: "en_US",
