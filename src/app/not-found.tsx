@@ -44,7 +44,7 @@ function NotFound() {
             Error: Page Not Found
           </h1>
 
-          <ButtonPrimary title="Return Home" link="/" />
+          <ButtonPrimary title="Return Home" link="/" newTab={false} />
         </div>
       </div>
     </>

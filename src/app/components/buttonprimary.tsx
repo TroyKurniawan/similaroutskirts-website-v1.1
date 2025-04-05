@@ -1,13 +1,17 @@
 type ButtonProps = {
   title: string;
   link: string;
+  newTab: boolean;
 };
 
-function ButtonPrimary({ title, link }: ButtonProps) {
+function ButtonPrimary({ title, link, newTab }: ButtonProps) {
+  let target = "";
+  if (newTab) target = "_blank";
+
   return (
     <a
       href={link}
-      target="_blank"
+      target={target}
       className="my-4 lg:my-8 py-3 px-4
                 flex place-content-center place-items-center
                 hover:bg-white bg-blue-500 hover:text-blue-500 transition

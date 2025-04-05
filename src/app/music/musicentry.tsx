@@ -217,7 +217,11 @@ function MusicEntry({ entry }: MusicEntryProps) {
             )}
             {!entry.official && <div>Unofficial Release</div>}
           </div>
-          <ButtonPrimary title="Download / Stream" link={entry.link} />
+          <ButtonPrimary
+            title="Download / Stream"
+            link={entry.link}
+            newTab={true}
+          />
         </div>
       )}
     </>
