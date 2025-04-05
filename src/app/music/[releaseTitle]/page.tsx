@@ -105,7 +105,7 @@ async function SmartLink({ params }: Props) {
           alt={song.title}
         />
 
-        <div className="w-full h-full mt-8 grid justify-center place-content-center">
+        <div className="w-screen mt-8 grid justify-center place-content-center">
           {/* Main Box */}
           <div
             className="w-80 md:w-96 grid justify-center py-4 my-16 shadow-xl
