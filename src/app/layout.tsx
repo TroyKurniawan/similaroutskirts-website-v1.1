@@ -1,3 +1,4 @@
+import { Viewport } from "next";
 import { Roboto } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "blue",
 };
 
 const roboto = Roboto({
