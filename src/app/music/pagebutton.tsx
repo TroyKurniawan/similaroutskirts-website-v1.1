@@ -25,20 +25,15 @@ function PageButton({
 
   //   Dynamically set button's ID and highlight it if it is the current page
   const pageButtonID: string = "page-button-" + pageNumber;
-  if (typeof window !== "undefined") {
-    if (pageCurrent == pageNumber)
-      document.getElementById(pageButtonID)?.classList.add("bg-slate-800");
-    else
-      document.getElementById(pageButtonID)?.classList.remove("bg-slate-800");
-  }
+  let buttonColor: string = "";
+  if (pageCurrent == pageNumber) buttonColor = "bg-slate-800";
 
   // ==========================================
 
   return (
     <div
       id={pageButtonID}
-      className="size-8 border-2 border-slate-800 text-center place-content-center text-gray-500 cursor-pointer
-                hover:bg-slate-800"
+      className={`size-8 border-2 border-slate-800 text-center place-content-center text-gray-500 cursor-pointer hover:bg-slate-800 ${buttonColor}`}
       onClick={pagesFilter}
     >
       {pageNumber}

@@ -66,7 +66,7 @@ export const generateMetadata = async ({
         siteName: "Similar Outskirts",
         images: [
           {
-            url: "/thumbnail.jpg",
+            url: "https://similaroutskirts.com/thumbnail.jpg",
             width: 1280,
             height: 720,
           },

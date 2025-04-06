@@ -5,10 +5,13 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://similaroutskirts.com"),
+
   title: {
     template: "%s | Similar Outskirts",
     default: "Similar Outskirts",
   },
+
   description: "Music Producer / DJ 🎧",
 
   openGraph: {

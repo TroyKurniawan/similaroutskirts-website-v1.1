@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Menu from "./Menu/Menu";
 import ButtonHeader from "./buttonheader";
 import Link from "next/link";
@@ -11,13 +12,11 @@ function pageBehind() {
 }
 
 function Header() {
-  // Make sure that "document" can be read be the client
-  if (typeof window !== "undefined") {
-    document.addEventListener("scroll", bgColor);
-  }
-
   // If the user is not at the top of the page, add a black background to the header
-  function bgColor() {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+  function handleScroll() {
     if (window.scrollY !== 0)
       document.getElementById("header")?.classList.add("bg-black");
     else document.getElementById("header")?.classList.remove("bg-black");
