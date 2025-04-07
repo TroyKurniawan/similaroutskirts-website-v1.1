@@ -37,16 +37,18 @@ function LiveShowsEntry({ event }: LiveShowsEntryProps) {
         />
         {/* Text Box */}
         <div className="grid w-80 md:w-[28rem] lg:w-[50%] mt-4 lg:mt-0">
+          {/* Date */}
+          <p className="text-sm text-gray-500 sm:text-base lg:text-lg mb-2">
+            {event.date}
+          </p>
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-black mb-2">
             {event.title}
           </h2>
-          {/* Date */}
-          <h3 className="text-base sm:text-lg lg:text-xl">{event.date}</h3>
           {/* Location */}
-          <h4 className="text-sm sm:text-md lg:text-lg text-gray-500 mb-8">
+          <h3 className="text-base lg:text-lg mb-8">
             {event.venue} • {event.city}
-          </h4>
+          </h3>
           {/* <div className="text-gray-500 mb-4 lg:mb-8">
             <p className="text-base sm:text-lg lg:text-xl font-extrabold">
               {event.date}
@@ -56,7 +58,7 @@ function LiveShowsEntry({ event }: LiveShowsEntryProps) {
             </p>
           </div> */}
           {/* Description */}
-          <div className="text-sm sm:text-base">
+          <div className="text-sm">
             <p>{event.description}</p>
             <a
               href={event.host_link}
