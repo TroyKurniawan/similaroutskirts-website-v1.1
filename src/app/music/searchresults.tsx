@@ -153,9 +153,9 @@ function SearchResults({
           {entryCount === 0 && <p>No results found.</p>}
         </div>
 
-        <div className="flex space-x-8 place-items-center">
+        <div className="flex space-x-4 place-items-center">
           {/* Sort */}
-          <div className="flex place-items-center text-gray-500 space-x-2">
+          <div className="flex place-items-center text-gray-500">
             <b className="w-14">Sort by:</b>
             <select
               id="sort-menu"
