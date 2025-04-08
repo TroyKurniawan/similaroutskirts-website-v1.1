@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Similar Outskirts - Music Artist Website
 
-## Getting Started
+This repository holds the website for music artist **Similar Outskirts**. The website hosts his biography, discography, and portfolio.
 
-First, run the development server:
+This is version 1.1, which was built with Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**_[VISIT WEBSITE HERE](https://similaroutskirts.com)_**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+!["Similar Outskirts Website" Thumbnail](https://raw.githubusercontent.com/TroyKurniawan/similaroutskirts-website-v1.1/refs/heads/main/public/thumbnail.jpg)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 📖 **About:** Biography about Similar Outskirts
+- 🎶 **Music:** Search tool to find music based on title, key, music label, tempo, and more.
+- 🎥 **Live Shows:** List of video recordings of live performances.
+- 🛠️ **Music Usage:** Rules on how to use his music for different projects.
+- ✉️ **Contact:** Form to send an email.
 
-## Learn More
+## Special Thanks
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 👤 **[Google Fonts](https://fonts.google.com/icons):** SVG Icons.
+- 🖥️ **[Vercel](https://vercel.com):** Site hosting.
