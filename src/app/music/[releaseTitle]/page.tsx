@@ -103,7 +103,6 @@ async function SmartLink({ params }: Props) {
   //   "https://similaroutskirts.vercel.app/music/" +
   //   song.title.replace(/\s/g, "").toLowerCase();
 
-  let bgImageAdjust = "w-screen";
   // if (screen.width < screen.height) bgImageAdjust = "h-screen";
 
   if (found)
