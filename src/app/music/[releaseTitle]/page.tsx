@@ -44,7 +44,7 @@ export const generateMetadata = async ({
         siteName: "Similar Outskirts",
         images: [
           {
-            url: metaSong.art,
+            url: metaSong.art.replaceAll("200", "500"),
             width: 500,
             height: 500,
           },
