@@ -22,7 +22,8 @@ function Link({ site, url }: LinkProps) {
   } else if (site === "Bandcamp") {
     icon = "/social-logos/social-bc.png";
     borderVar = "border-cyan-300";
-  } else if (site === "Free Download") icon = "/social-logos/social-dl.png";
+  } else if (site === "Free Download")
+    icon = "/social-logos/google-download.svg";
 
   return (
     <>

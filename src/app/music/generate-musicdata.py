@@ -1,8 +1,8 @@
 import csv
 
 # Specify the file name
-write_file = "./src/musicdata/musicdata.js"
-read_file = "./src/musicdata/musicdata.csv"
+write_file = "./src/app/music/musicdata.js"
+read_file = "./src/app/music/musicdata.csv"
 
 # Open the file in write mode and write the text
 with open(write_file, 'w', errors='ignore') as w_file:

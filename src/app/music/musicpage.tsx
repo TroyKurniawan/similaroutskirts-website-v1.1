@@ -44,7 +44,7 @@ function MusicPage() {
     <>
       {/* Background */}
       <div
-        className="h-screen w-screen bg-[url(/backgrounds/bg-music.jpg)] fixed top-0 -z-50
+        className="h-screen w-screen bg-[url(/backgrounds/bg-music.jpg)] fixed top-0 -z-50 animate-fadeIn
                    bg-cover bg-bottom"
       />
 

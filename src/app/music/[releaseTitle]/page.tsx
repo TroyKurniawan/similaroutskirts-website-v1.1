@@ -24,20 +24,21 @@ export const generateMetadata = async ({
       break;
     }
   }
-  let full_title = "";
-  if (metaSong.subtitle)
-    full_title += metaSong.title + " (" + metaSong.subtitle + ")";
-  // song.art = song.art.replaceAll("500", "1080");
+
+  // Create titles for meta tags
+  let full_title1 = metaSong.title; // Example 1: Koki Chant (Remix)
+  let full_title2 = metaSong.title; // Example 2: Koki Chant (Similar Outskirts Remix)
+  if (metaSong.remix) full_title1 += " (Remix)";
+  if (metaSong.subtitle) full_title2 += " (" + metaSong.subtitle + ")";
+  else full_title2 += " | Similar Outskirts";
 
   if (metaFound)
     return {
-      title: {
-        absolute: full_title,
-      },
+      title: full_title1,
       description: "Download / Stream 🎶",
 
       openGraph: {
-        title: full_title,
+        title: full_title2,
         description: "Download / Stream 🎶",
         url: "https://similaroutskirts.com",
         siteName: "Similar Outskirts",
@@ -90,41 +91,55 @@ async function SmartLink({ params }: Props) {
     }
   }
 
+  // Use 500x500 version of art
+  const art_link = song.art.replaceAll("200", "500");
+
+  // Concat subtitle
+  let subtitle = "Similar Outskirts";
+  if (song.subtitle) subtitle = song.subtitle;
+
   // const full_title = song.title + " " + song.subtitle;
   // const full_url =
   //   "https://similaroutskirts.vercel.app/music/" +
   //   song.title.replace(/\s/g, "").toLowerCase();
 
+  let bgImageAdjust = "w-screen";
+  // if (screen.width < screen.height) bgImageAdjust = "h-screen";
+
   if (found)
     return (
       <>
         {/* Background */}
-        <img
-          src={song.art}
-          className="fixed w-screen h-screen blur-2xl opacity-40 -z-10"
-          alt={song.title}
+        {/* <div className="fixed h-screen w-screen place-content-center place-items-center">
+          <img
+            src={song.art}
+            className="w-screen blur-2xl opacity-40 -z-10"
+            alt={song.title}
+          />
+        </div> */}
+        <div
+          className="h-screen w-screen bg-[url(/backgrounds/bg-music.jpg)] fixed top-0 -z-50 animate-fadeIn
+                   bg-cover bg-bottom"
         />
 
         <div className="w-screen mt-8 grid justify-center place-content-center">
           {/* Main Box */}
           <div
-            className="w-80 md:w-96 grid justify-center py-4 my-16 shadow-xl
+            className="w-80 md:w-96 grid justify-center py-4 md:py-6 my-16 shadow-xl
                         border-4 border-slate-800 bg-slate-900 backdrop-blur bg-opacity-80 space-y-4
                         animate-fadeInSlide"
           >
             {/* Art */}
             <img
               className="size-72 md:size-80"
-              src={song.art}
+              src={art_link}
               alt={song.title}
             />
 
             {/* Title */}
             <div className="w-full h-16 grid place-items-center">
               <h1 className="font-black text-2xl md:text-3xl">{song.title}</h1>
-              <h2 className="font-bold text-gray-500 md:text-lg">
-                {song.subtitle}
-              </h2>
+              <h2 className="font-bold text-gray-500 md:text-lg">{subtitle}</h2>
             </div>
 
             <span className="w-full h-[3px] bg-slate-800" />
