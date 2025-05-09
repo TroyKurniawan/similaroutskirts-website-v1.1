@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import { MusicData } from "../music/musicdata";
 import MusicEntry from "./musicentry";
 import PageButton from "./pagebutton";
+// import { initializeApp } from "firebase/app";
+// import { getDatabase, ref, child, get } from "firebase/database";
+// import {
+//   initializeAppCheck,
+//   ReCaptchaEnterpriseProvider,
+// } from "firebase/app-check";
 
 type EntryProps = {
   id: number;
@@ -43,6 +49,41 @@ function SearchResults({
   remixes,
   collaborations,
 }: SearchResultsProps) {
+  // Firebase init
+  // const firebaseConfig = {
+  //   databaseURL: "",
+  // };
+  // const app = initializeApp(firebaseConfig);
+  // const databaseRef = ref(getDatabase(app));
+  // const [discography, setDiscography] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(false);
+
+  // Get data from Firebase
+  // useEffect(() => {
+  // App Check init
+  // const appCheck = initializeAppCheck(app, {
+  //   provider: new ReCaptchaEnterpriseProvider(""),
+  //   isTokenAutoRefreshEnabled: true,
+  // });
+  // get(child(databaseRef, "/"))
+  //   .then((snapshot) => {
+  //     if (snapshot.exists()) {
+  //       setDiscography(snapshot.val());
+  //       setLoading(false);
+  //     } else {
+  //       setError(true);
+  //       console.log("Error: No data found!");
+  //     }
+  //   })
+  //   .catch((error) => {
+  //     setError(true);
+  //     console.error(error);
+  //   });
+  // }, []);
+
+  const loading = false;
+
   // Count number of entries that are rendered
   const entryCount = MusicData.slice(0).filter(musicFilter).length;
 
@@ -199,12 +240,48 @@ function SearchResults({
         id="music-entries"
         className="border-l-4 border-r-4 border-slate-800 overflow-x-hidden"
       >
-        {MusicData.filter(musicFilter)
-          .sort(sortEntry)
-          .slice(pageRange[0], pageRange[1])
-          .map((entry) => (
-            <MusicEntry key={entry.id} entry={entry} />
-          ))}
+        {/* Loading Icon */}
+        {/* {loading && (
+          <div
+            className="w-[calc(100vw)] md:w-[calc(100vw-200px)] lg:w-[calc(100vw-500px)] max-w-[1024px] place-items-center
+          grid items-center h-[calc(100vh-180px-80px)] md:h-[calc(100vh-200px-90px)]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="100px"
+              viewBox="0 -960 960 960"
+              width="100px"
+              fill="#1d293d"
+              className="animate-spin"
+            >
+              <path d="M480-480Zm-400 0q0-88 34-163t93-130q59-55 136-83.5T508-879q17 2 27 14.5t7 29.5q-3 17-16.5 27t-30.5 9q-69-3-129.5 19.5T259-713q-46 44-72.5 103.5T160-480q0 134 93 227t227 93q69 0 128.5-26.5T712-259q46-48 68-109t19-127q-1-17 9-30.5t27-16.5q17-3 29.5 7t14.5 27q6 87-22.5 164T774-208q-57 62-133 95T480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480Zm640-120q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Z" />
+            </svg>
+          </div>
+        )} */}
+
+        {/* Entries */}
+        {!loading &&
+          MusicData.filter(musicFilter)
+            .sort(sortEntry)
+            .slice(pageRange[0], pageRange[1])
+            .map((entry: EntryProps) => (
+              <MusicEntry key={entry.id} entry={entry} />
+            ))}
+
+        {/* Error Message */}
+        {/* {!loading && error && (
+          <div
+            className="w-[calc(100vw)] md:w-[calc(100vw-200px)] lg:w-[calc(100vw-500px)] max-w-[1024px] place-items-center
+          grid items-center h-[calc(100vh-180px-80px)] md:h-[calc(100vh-200px-90px)]"
+          >
+            <div className="grid place-items-center mx-8 text-center">
+              <p className="text-3xl font-black mb-2">
+                Error: Music data could not be retrieved.
+              </p>
+              <p className="text-xl">Please refresh or try again later.</p>
+            </div>
+          </div>
+        )} */}
       </div>
     </div>
   );
