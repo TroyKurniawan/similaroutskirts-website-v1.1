@@ -1,11 +1,21 @@
 export const LiveShowsData = [
     {
+        "video": "https://www.youtube.com/embed/XZFmk8EOz3s?si=UGlsKusOQXGEe3R0",
+        "title": "AniClover -house blend-",
+        "date": "Apr 26th, 2025",
+        "venue": "Tamper Room",
+        "city": "Fremont, CA",
+        "description": "An intimate, 360/boiler room style show with an anime twist!",
+        "host": "AniClover",
+        "host_link": "https://www.aniclover.org"
+    },
+    {
         "video": "https://www.youtube.com/embed/Y5v3gbHXSAE?si=lQ3kYWanOOD5AHq8",
         "title": "Japan Tour 2024",
         "date": "Dec 28th, 2024 - Jan 6th, 2025",
         "venue": "Circus, Asagaya Drift, Triangle Osaka, MOGRA",
         "city": "Tokyo/Osaka, Japan",
-        "description": "A small Japan tour featuring four shows in Tokyo and Osaka! ",
+        "description": "A small Japan tour featuring four shows in Tokyo and Osaka!",
         "host": "LYOKO, APEXA, Alvin Phu",
         "host_link": "https://www.lyoko.com"
     },
@@ -16,7 +26,7 @@ export const LiveShowsData = [
         "venue": "WALL&WALL",
         "city": "Minato City, Tokyo, Japan",
         "description": "A collaborative anime-themed show between performers from the United States and Japan!",
-        "host": "AniCLover, RuuChan, Nemonoika",
+        "host": "AniClover, RuuChan, Nemonoika",
         "host_link": "https://www.aniclover.org"
     },
     {
@@ -25,7 +35,7 @@ export const LiveShowsData = [
         "date": "October 5th, 2024",
         "venue": "DNA Lounge",
         "city": "San Francisco, CA",
-        "description": "An intimate club show gathering worldwide members from the \"VR Chat\" community!",
+        "description": "An indie club show gathering worldwide members from the \"VR Chat\" community!",
         "host": "LYOKO",
         "host_link": "https://www.lyoko.com"
     },
@@ -36,7 +46,7 @@ export const LiveShowsData = [
         "venue": "DNA Lounge",
         "city": "San Francisco, CA",
         "description": "An unofficial afterparty for YOASOBI's San Francisco show!",
-        "host": "AniCLover",
+        "host": "AniClover",
         "host_link": "https://www.aniclover.org"
     },
     {
