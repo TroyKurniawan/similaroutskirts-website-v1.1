@@ -2,7 +2,7 @@ export const LiveShowsData = [
     {
         "video": "https://www.youtube.com/embed/XZFmk8EOz3s?si=UGlsKusOQXGEe3R0",
         "title": "AniClover -house blend-",
-        "date": "Apr 26th, 2025",
+        "date": "April 26th, 2025",
         "venue": "Tamper Room",
         "city": "Fremont, CA",
         "description": "An intimate, 360/boiler room style show with an anime twist!",
