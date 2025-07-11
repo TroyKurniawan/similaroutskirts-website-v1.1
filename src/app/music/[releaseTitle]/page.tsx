@@ -17,7 +17,8 @@ export const generateMetadata = async ({
   let metaFound = false;
   for (const metaRelease of MusicData) {
     if (
-      metaRelease.title.replace(/\s/g, "").toLowerCase() === metaReleaseTitle
+      metaRelease.title.replace(/\s/g, "").toLowerCase() ===
+      metaReleaseTitle.replace(/-/g, "")
     ) {
       metaSong = metaRelease;
       metaFound = true;
@@ -78,13 +79,17 @@ export const generateMetadata = async ({
     };
 };
 
+// The prop contains the end of the URL (eg. /mysticroar)
 async function SmartLink({ params }: Props) {
   // Search for the right page
   const releaseTitle = (await params).releaseTitle;
   let song = MusicData[0];
   let found = false;
   for (const release of MusicData) {
-    if (release.title.replace(/\s/g, "").toLowerCase() === releaseTitle) {
+    if (
+      release.title.replace(/\s/g, "").toLowerCase() ===
+      releaseTitle.replace(/-/g, "")
+    ) {
       song = release;
       found = true;
       break;
