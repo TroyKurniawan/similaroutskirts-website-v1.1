@@ -307,16 +307,17 @@ function SearchFilter({
             defaultValue={"-"}
           >
             <option value="-">-</option>
-            <option value="Independent">Independent</option>
-            <option value="Rushdown">Rushdown</option>
-            <option value="FiXT">FiXT</option>
-            <option value="Proximity">Proximity</option>
+            <option value="APEXA">APEXA</option>
             <option value="Disciple">Disciple</option>
+            <option value="FiXT">FiXT</option>
             <option value="FORM">FORM</option>
             <option value="Heaven Sent">Heaven Sent</option>
-            <option value="Hypernight">Hypernight</option>
-            <option value="Umbra Collective">Umbra Collective</option>
             <option value="Hot Panda Media">Hot Panda Media</option>
+            <option value="Hypernight">Hypernight</option>
+            <option value="Independent">Independent</option>
+            <option value="Proximity">Proximity</option>
+            <option value="Rushdown">Rushdown</option>
+            <option value="Umbra Collective">Umbra Collective</option>
           </select>
         </div>
 
