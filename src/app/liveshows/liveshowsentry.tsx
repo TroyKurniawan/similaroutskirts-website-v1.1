@@ -38,11 +38,11 @@ function LiveShowsEntry({ event }: LiveShowsEntryProps) {
         {/* Text Box */}
         <div className="grid w-80 md:w-[28rem] lg:w-[50%] mt-4 lg:mt-0">
           {/* Date */}
-          <p className="text-sm text-gray-500 sm:text-base lg:text-lg mb-2">
+          <p className="text-sm text-gray-500 sm:text-base lg:text-lg lg:mb-2 mb-0">
             {event.date}
           </p>
           {/* Title */}
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-black mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-black lg:mb-2 mb-0">
             {event.title}
           </h2>
           {/* Location */}

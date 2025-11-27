@@ -1,5 +1,25 @@
 export const LiveShowsData = [
     {
+        "video": "https://www.youtube.com/embed/A2xJAOsQTug?si=7b_UZBL5hGxkW_H1",
+        "title": "anime expo chibi 2025",
+        "date": "Nov 8th, 2025",
+        "venue": "Ontario Convention Center",
+        "city": "Ontario, CA",
+        "description": "An anime rave during anime expo chibi 2025!",
+        "host": "Senpai Squad",
+        "host_link": "https://www.senpaisquad.net"
+    },
+    {
+        "video": "https://www.youtube.com/embed/ROr8CfMaNU0?si=YYJMht37MK1OGvNK",
+        "title": "AniCloversary 6",
+        "date": "August 16th, 2025",
+        "venue": "DNA Lounge",
+        "city": "San Francisco, CA",
+        "description": "Celebrating 6 years of AniClover!",
+        "host": "AniClover",
+        "host_link": "https://www.aniclover.org"
+    },
+    {
         "video": "https://www.youtube.com/embed/XZFmk8EOz3s?si=UGlsKusOQXGEe3R0",
         "title": "AniClover -house blend-",
         "date": "April 26th, 2025",
