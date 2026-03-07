@@ -1,5 +1,15 @@
 export const LiveShowsData = [
     {
+        "video": "https://www.youtube.com/embed/VIcMQPG6PD4?si=BqubaMhrFFceg4wh",
+        "title": "Holiday Matsuri 2025",
+        "date": "Dec 19th, 2025",
+        "venue": "Orange County Convention Center",
+        "city": "Orlando, FL",
+        "description": "An anime rave during Holiday Matsuri 2025!",
+        "host": "Senpai Squad",
+        "host_link": "https://www.senpaisquad.net"
+    },
+    {
         "video": "https://www.youtube.com/embed/A2xJAOsQTug?si=7b_UZBL5hGxkW_H1",
         "title": "anime expo chibi 2025",
         "date": "Nov 8th, 2025",
