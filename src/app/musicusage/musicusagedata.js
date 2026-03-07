@@ -20,9 +20,11 @@ export const MusicUsageData = [
         "code": [
             "Music by Similar Outskirts",
             "https://similaroutskirts.com",
+            "https://youtube.com/SimilarOutskirts",
+            "https://www.instagram.com/similaroutskirts/",
+            "https://www.tiktok.com/@similaroutskirts",
             "https://soundcloud.com/similar-outskirts",
             "https://x.com/Sim_Out_",
-            "https://youtube.com/SimilarOutskirts",
         ]
     },
     {
