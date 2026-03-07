@@ -44,6 +44,7 @@ function Header() {
           <ButtonHeader title="Home" link="/" />
           <ButtonHeader title="About" link="/about" />
           <ButtonHeader title="Music" link="/music" />
+          <ButtonHeader title="Tour" link="/tour" />
           <ButtonHeader title="Live Shows" link="/liveshows" />
           <ButtonHeader title="Music Usage" link="/musicusage" />
           <ButtonHeader title="Contact" link="/contact" />

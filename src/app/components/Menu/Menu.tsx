@@ -71,6 +71,7 @@ function Menu({ pageBehind }: MenuProps) {
           <MenuLinks title="Home" link="/" />
           <MenuLinks title="About" link="/about" />
           <MenuLinks title="Music" link="/music" />
+          <MenuLinks title="Tour" link="/tour" />
           <MenuLinks title="Live Shows" link="/liveshows" />
           <MenuLinks title="Music Usage" link="/musicusage" />
           <MenuLinks title="Contact" link="/contact" />
