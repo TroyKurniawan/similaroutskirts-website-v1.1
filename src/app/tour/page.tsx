@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PageTitle from "../components/pagetitle";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Tour",
@@ -36,10 +37,7 @@ function Tour() {
 
         {/* Bandsintown Event Widget */}
         <div className="mt-10 w-screen sm:w-[36rem] lg:w-[60rem] 2xl:w-[80rem] border-4 border-slate-800">
-          <script
-            charSet="utf-8"
-            src="https://widgetv3.bandsintown.com/main.min.js"
-          ></script>
+          <Script src="https://widgetv3.bandsintown.com/main.min.js" async />
           <a
             className="bit-widget-initializer "
             data-artist-name="id_11685047"
