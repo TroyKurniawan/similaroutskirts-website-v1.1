@@ -12,7 +12,7 @@ export const LiveShowsData = [
     {
         "video": "https://www.youtube.com/embed/Up2K7RZro48?si=rVFX0PssaFtvtFl-",
         "title": "WeebCon 2026",
-        "date": "Apr 4th, 2026",
+        "date": "April 4th, 2026",
         "venue": "Gaylord Texan Resort and Convention Center",
         "city": "Dallas, TX",
         "description": "The official anime rave of WeebCon 2026!",
@@ -22,7 +22,7 @@ export const LiveShowsData = [
     {
         "video": "https://www.youtube.com/embed/VIcMQPG6PD4?si=BqubaMhrFFceg4wh",
         "title": "Holiday Matsuri 2025",
-        "date": "Dec 19th, 2025",
+        "date": "December 19th, 2025",
         "venue": "Orange County Convention Center",
         "city": "Orlando, FL",
         "description": "The official anime rave of Holiday Matsuri 2025!",
@@ -32,7 +32,7 @@ export const LiveShowsData = [
     {
         "video": "https://www.youtube.com/embed/A2xJAOsQTug?si=7b_UZBL5hGxkW_H1",
         "title": "anime expo chibi 2025",
-        "date": "Nov 8th, 2025",
+        "date": "November 8th, 2025",
         "venue": "Ontario Convention Center",
         "city": "Ontario, CA",
         "description": "The official anime rave of anime expo chibi 2025!",
@@ -62,7 +62,7 @@ export const LiveShowsData = [
     {
         "video": "https://www.youtube.com/embed/Y5v3gbHXSAE?si=lQ3kYWanOOD5AHq8",
         "title": "Japan Tour 2024",
-        "date": "Dec 28th, 2024 - Jan 6th, 2025",
+        "date": "December 28th, 2024 - Jan 6th, 2025",
         "venue": "Circus, Asagaya Drift, Triangle Osaka, MOGRA",
         "city": "Tokyo/Osaka, Japan",
         "description": "A small Japan tour featuring four shows in Tokyo and Osaka!",
