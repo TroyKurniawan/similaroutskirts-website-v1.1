@@ -1,11 +1,31 @@
 export const LiveShowsData = [
     {
+        "video": "https://www.youtube.com/embed/0gHBG1xz7Wk?si=h1kgKRm_hQmXeeYV",
+        "title": "AniClover Deluxe 2026",
+        "date": "May 24th, 2026",
+        "venue": "Loft Bar & Bistro",
+        "city": "San José, CA",
+        "description": "An unofficial afterparty during the Fanime weekend!",
+        "host": "AniClover",
+        "host_link": "https://www.aniclover.org"
+    },
+    {
+        "video": "https://www.youtube.com/embed/Up2K7RZro48?si=rVFX0PssaFtvtFl-",
+        "title": "WeebCon 2026",
+        "date": "Apr 4th, 2026",
+        "venue": "Gaylord Texan Resort and Convention Center",
+        "city": "Dallas, TX",
+        "description": "The official anime rave of WeebCon 2026!",
+        "host": "Senpai Squad",
+        "host_link": "https://www.senpaisquad.net"
+    },
+    {
         "video": "https://www.youtube.com/embed/VIcMQPG6PD4?si=BqubaMhrFFceg4wh",
         "title": "Holiday Matsuri 2025",
         "date": "Dec 19th, 2025",
         "venue": "Orange County Convention Center",
         "city": "Orlando, FL",
-        "description": "An anime rave during Holiday Matsuri 2025!",
+        "description": "The official anime rave of Holiday Matsuri 2025!",
         "host": "Senpai Squad",
         "host_link": "https://www.senpaisquad.net"
     },
@@ -15,7 +35,7 @@ export const LiveShowsData = [
         "date": "Nov 8th, 2025",
         "venue": "Ontario Convention Center",
         "city": "Ontario, CA",
-        "description": "An anime rave during anime expo chibi 2025!",
+        "description": "The official anime rave of anime expo chibi 2025!",
         "host": "Senpai Squad",
         "host_link": "https://www.senpaisquad.net"
     },
