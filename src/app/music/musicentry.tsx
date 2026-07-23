@@ -108,7 +108,7 @@ function MusicEntry({ entry }: MusicEntryProps) {
               {entry.title}
             </h1>
             {entry.subtitle && (
-              <h2 className="text-sm 2xl:text-base">({entry.subtitle})</h2>
+              <h2 className="text-sm 2xl:text-base">{entry.subtitle}</h2>
             )}
             <p
               className="text-gray-500 mt-2

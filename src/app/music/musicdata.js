@@ -3218,7 +3218,7 @@ export const MusicData = [
   {
     "id": 135,
     "title": "Brain Rot",
-    "subtitle": "(ft. Kasane Teto) [Similar Outskirts Remix]",
+    "subtitle": "Similar Outskirts Remix",
     "release_date": "2026-7-23",
     "length": 179,
     "keysig": ["Ab / Fm"],
