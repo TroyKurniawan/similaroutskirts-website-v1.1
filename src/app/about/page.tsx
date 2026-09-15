@@ -45,37 +45,41 @@ function About() {
             {/* Paragraph */}
             <div className="text-sm md:text-lg text-justify space-y-5">
               <p>
-                Troy Kurniawan (pka. Similar Outskirts) is an
-                Indonesian-American bass music artist from the Bay Area,
-                California. His passion for blending bass-heavy and melodic
-                styles have gathered support from NGHTMRE, SLANDER, Tokyo
-                Machine, Ace Aura, Kotori, Lizzy Jane, Hyper Potions, Synthion,
-                and more.
+                For over 10 years, Troy Kurniawan has built up the Similar
+                Outskirts project out of his love and passion for dance music.
+                While some artists focus on catchy melodic anthems, and others
+                focus on bass-heavy bangers, Kurniawan aims to find the perfect
+                balance of both. He has created an extensive discography to
+                cement himself as an early promoter of the colour bass movement,
+                backed by big acts like Chime, Tokyo Machine, Ace Aura, and
+                Hyper Potions, as well as labels like Disciple and Rushdown.
+                After taking a step back to reflect on what his next creative
+                direction would be, he turned to his younger days filled with
+                whimsy and nostalgia.
               </p>
               <p>
-                Kurniawan was exposed to many facets of music during his
-                childhood, from learning piano and drums to joining school music
-                groups. As such, he naturally grew interested in music
-                production in 2012. With over a decade of experience under his
-                belt, he has produced a number of projects including EPs such as
-                Titans, Headspace and Generations. Moreover, he has released
-                official remixes for artists like Chime, Skybreak, bo en,
-                Tenkitsune, Disero, skygate, and foxi. His works have also been
-                released with record labels including Disciple, Rushdown,
-                Proximity, and Heaven Sent.
+                Growing up in the San Francisco Bay Area, Kurniawan was exposed
+                to many different cultures, especially Japanese media. Fueled by
+                video game soundtracks, anime art styles, 2000s pop media, and
+                the early internet space, he's tackling a familiar yet fresh
+                sound of dance music that throws listeners back to the good old
+                days. This was the main inspiration for his latest body of work
+                NOISE24. Without abandoning the love he has for his old music,
+                he's adopted a new mindset for making future music, one that has
+                a single requirement: have fun.
               </p>
               <p>
-                In recent years, a majority of Kurniawan&apos;s influences have
-                come from a new genre movement in the community called Colour
-                Bass. This style aims to cohesively combine the aggressive
-                elements of bass music and the catchiness/tonality of melodic
-                music. Inspiration is also drawn a lot from video games
-                soundtracks and Japanese Pop/Rock, namely by Junichi Masuda, Go
-                Ichinose & Morikazu Aoki (Pokemon), Yasunori Nishiki (Octopath
-                Traveler), Christopher Larkin (Hollow Knight), Sangatsu No
-                Phantasia (Kiznaiver), Yorushika (A Whisker Away), and Eve
-                (Jujutsu Kaisen, Dororo).
+                After playing shows in cities across America and Japan,
+                Kurniawan is thrilled to dive into the Japanese club music space
+                with his original music and anisong remixes/mashups. The success
+                of his Pretty Rave Girl cover with Kasane Teto has opened up new
+                opportunities to share his love of both dance music and online
+                media with the community. With more tracks on the way, he is
+                ready to show the world how fun bass music can really be if you
+                truly tap into your interests and open your heart to an
+                audience.
               </p>
+              <p>🔻 TETO DANCE MUSIC 🔻</p>
             </div>
             {/* Persona Image */}
             <Image
