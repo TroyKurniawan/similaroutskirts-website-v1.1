@@ -61,12 +61,12 @@ function About() {
                 Growing up in the San Francisco Bay Area, Kurniawan was exposed
                 to many different cultures, especially Japanese media. Fueled by
                 video game soundtracks, anime art styles, 2000s pop media, and
-                the early internet space, he's tackling a familiar yet fresh
-                sound of dance music that throws listeners back to the good old
-                days. This was the main inspiration for his latest body of work
-                NOISE24. Without abandoning the love he has for his old music,
-                he's adopted a new mindset for making future music, one that has
-                a single requirement: have fun.
+                the early internet space, he&apos;s tackling a familiar yet
+                fresh sound of dance music that throws listeners back to the
+                good old days. This was the main inspiration for his latest body
+                of work NOISE24. Without abandoning the love he has for his old
+                music, he&apos;s adopted a new mindset for making future music,
+                one that has a single requirement: have fun.
               </p>
               <p>
                 After playing shows in cities across America and Japan,
